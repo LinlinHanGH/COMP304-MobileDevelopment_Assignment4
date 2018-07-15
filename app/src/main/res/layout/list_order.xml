@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <!--  ListRow Left sized Thumbnail image -->
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/image_bg"
+        android:layout_marginEnd="5dip">
+
+        <ImageView
+            android:id="@+id/order_item_image"
+            android:layout_width="50dip"
+            android:layout_height="50dip" />
+
+    </LinearLayout>
+
+    <!-- Order Id + customer name -->
+    <TextView
+        android:id="@+id/txv_orderId_cname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toEndOf="@+id/thumbnail"
+        android:text="#Id -- Customer name"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <!-- Item : Amount -->
+    <TextView
+        android:id="@+id/txv_order_itemamount"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txv_orderId_cname"
+        android:textColor="#343434"
+        android:textSize="13sp"
+        android:paddingTop="3dp"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Item: Amount " />
+
+    <!-- Status -->
+    <TextView
+        android:id="@+id/txv_order_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/txv_order_deliveryDate"
+        android:gravity="right"
+        android:text="In-Process"
+        android:layout_marginRight="5dip"
+        android:paddingTop="8dp"
+        android:textSize="13sp"
+        android:textColor="#10bcc9"
+        android:textStyle="bold"/>
+
+    <!-- Delivery Date -->
+    <TextView
+        android:id="@+id/txv_order_deliveryDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:text="In-Process"
+        android:layout_marginRight="5dip"
+        android:paddingTop="30dp"
+        android:textSize="13sp"
+        android:textColor="#10bcc9"
+        android:textStyle="bold"/>
+
+    <!-- delete right arrow -->
+</RelativeLayout>

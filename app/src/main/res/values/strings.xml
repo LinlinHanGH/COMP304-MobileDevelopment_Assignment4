@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">Online Shopping</string>
+
+    <!-- log in activity -->
+    <string name="customer_login">Customer</string>
+    <string name="rep_login">Representative</string>
+    <string name="usernamehint">Enter user name</string>
+    <string name="pwdhint">Enter password</string>
+    <string name="title_activity_rep">Sign in</string>
+    <string name="login">Login</string>
+    <string name="registration">Registration</string>
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <!-- Rep options -->
+    <string-array name="rep_options">
+        <item>View All Orders</item>
+        <item>Edit Item</item>
+        <item>Edit Order</item>
+        <item>Edit User Information</item>
+    </string-array>
+
+    <!-- Customer options -->
+    <string-array name="cust_options">
+        <item>View My Orders</item>
+        <item>Place Order</item>
+        <item>Edit Order</item>
+        <item>Edit User Information</item>
+    </string-array>
+
+    <!-- edit db -->
+    <string name="query_btn">Query</string>
+    <string name="update_btn">Update</string>
+    <string name="cancel_btn">Cancel</string>
+    <string name="add_btn">Place Order</string>
+
+
+    <!-- table Item -->
+    <string name="edit_itemid">ItemId: </string>
+    <string name="edit_itemName">ItemName: </string>
+    <string name="edit_itemPrice">Price: </string>
+    <string name="edit_itemCategory">Category: </string>
+
+    <!-- order Item -->
+    <string name="edit_orderid">OrderId: </string>
+    <string name="edit_order_itemid">ItemId: </string>
+    <string name="edit_order_itemName">ItemName: </string>
+    <string name="edit_orderAmount">Amount: </string>
+    <string name="edit_orderDeliveryDate">DeliveryDate: </string>
+    <string name="edit_orderStatus">Status: </string>
+
+    <!-- user info -->
+    <string name="edit_userId">User Id: </string>
+    <string name="edit_userName">User Name: </string>
+    <string name="edit_password">Password: </string>
+    <string name="edit_confPassword">Confirm Password: </string>
+    <string name="confPwdhint">Confirm your password</string>
+    <string name="edit_firstName">First Name: </string>
+    <string name="fnamehint">John</string>
+    <string name="edit_lastName">Last Name: </string>
+    <string name="lnamehint">Lee</string>
+    <string name="edit_address">Address: </string>
+    <string name="addresshint">Scarborough</string>
+    <string name="edit_postalCode">Postal Code: </string>
+    <string name="posthint">M1H5H6</string>
+
+    <string-array name="order_status">
+        <item>In-Process</item>
+        <item>Delivered</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

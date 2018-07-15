@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:id="@+id/llLoginTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        style = "@style/LoginTabLayout">
+
+        <TextView
+            android:id="@+id/txtLoginCustomer"
+            style="@style/LoginTabText"
+            android:text="@string/customer_login"
+            android:background="@color/colorCustomerLogin"
+            android:alpha="1" />
+
+        <TextView
+            android:id="@+id/txtLoginRep"
+            style="@style/LoginTabText"
+            android:text="@string/rep_login"
+            android:background="@color/colorRepLogin"
+            android:alpha="0.5"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llLoginCredentials"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        style="@style/LoginLayout">
+
+        <EditText
+            android:id="@+id/edtUsrName"
+            style="@style/LoginText"
+            android:hint="@string/usernamehint"/>
+
+        <EditText
+            android:id="@+id/edtPwd"
+            style="@style/LoginText"
+            android:hint="@string/pwdhint"
+            android:inputType="textPassword"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login"
+                android:onClick="authorizeLogin"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                style="@style/Button"
+                />
+            <Button
+                android:id="@+id/btnRegistration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/registration"
+                android:onClick="registration"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                style="@style/Button"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
